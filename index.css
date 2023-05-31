@@ -77,6 +77,9 @@
     align-items: center;
     gap: 20px;
     padding-left: 2.3rem;
+    position: sticky;
+    z-index: 500;
+    top: 0;
 }
 .nav a{
     text-decoration: none;
@@ -106,4 +109,78 @@
     color: white;
     padding: 0.6rem 1rem;
     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s all ease-in;
+}
+.front-desc a:hover{
+    background-color: #222;
+}
+.bot-head h2{
+    flex-direction: column;
+    margin: 30px 30px;
+    color:#4b4b4b;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: 1.2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bot-para{
+    padding-bottom: 5rem;
+    margin: 30px;
+    display: flex;
+}
+.bot-para a{
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #b5121b;
+    color: white;
+    padding: 1.3rem 3rem;
+    border-radius: 8px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.25s all ease-in;
+}
+.bot-para a:hover{
+    background-color: #222;
+}
+.programmes{
+    background-color: #efefef;
+    color: #4b4b4b;
+    padding: 2rem 0rem;
+    height: 110dvh;
+}
+.prog-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #efefef;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.prog-items div{
+    width: 18%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px;
+}
+.prog-items div img{
+    width: 100%;
+    height: 120px;
+}
+.prog-items div a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: larger;
+    padding: 0rem 1rem;
+    transition: 0.3s all ease;
+}
+.prog-items div a:hover{
+    text-decoration: underline;
 }
